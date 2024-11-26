@@ -6,20 +6,18 @@
     font-family: 'Poppins',sans-serif;
 }
 
-main{
-    background-color: rgb(27, 26, 26);
-    width: 100vw;
-    height: 100vh;
-}
-
 .menu{
     width: 100%;
     height: 90px;
-    background-color: rgb(27, 26, 26);
+    background-color: rgb(23, 22, 22);
     border-bottom: 2px solid gray;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 3;
+    position: sticky;
+    top: 0;
+
 }
 
 .nav-list{
@@ -27,6 +25,7 @@ main{
     display: flex;
     flex-direction: row;
     font-size: 18px;
+    margin-left: 30px;
 }
 
 .nav-item{
@@ -54,4 +53,83 @@ main{
 .icone-lateral{
     height: 100%;
     width: 100%;
+}
+
+.btn-header{
+    width: 150px;
+    height: 40px;
+    background-color: rgb(53, 222, 53);
+    color: white;
+    border-radius: 10px;
+    border: none;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+main{
+    height: 100%;
+    width: 100vw;
+    background-color: rgb(27, 26, 26);
+}
+
+#home{
+    background-color: rgb(27, 26, 26);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+
+.nome{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 11px;
+}
+
+.nome-texto{
+    text-transform: lowercase;
+    font-size: 40px;
+    color: white;
+}
+
+.maeda{
+    color: lime;
+}
+
+.area-img{
+    margin-top: 60px;
+    height: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.minha-img{
+    height: 300px;
+    width: 300px;
+}
+
+#sobre-mim{
+    display: flex;
+}
+
+.area-p{
+    border: 3px solid white;
+    margin-top: 180px;
+    margin-left: 100px;
+    border-radius: 20px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.txt-sbm{
+    color: white;
+    text-align: center;
 }
