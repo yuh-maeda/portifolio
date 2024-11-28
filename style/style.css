@@ -6,6 +6,11 @@
     font-family: 'Poppins',sans-serif;
 }
 
+section{
+    margin-top: 60px;
+    margin-bottom: 130px;
+}
+
 .menu{
     width: 100%;
     height: 90px;
@@ -68,7 +73,7 @@
 
 main{
     height: 100%;
-    width: 100vw;
+    width: 99vw;
     background-color: rgb(27, 26, 26);
 }
 
@@ -99,25 +104,30 @@ main{
 
 .area-img{
     margin-top: 60px;
-    height: 100%;
-    height: 50%;
+    height: 500px;
+    width: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 10px solid lime;
+    border-radius: 50%;
 }
 
 .minha-img{
-    height: 300px;
-    width: 300px;
+    height: 100%;
+    width: 60%;
+
 }
 
 #sobre-mim{
+    flex-direction: row;
     display: flex;
+    align-items: center;
+    justify-content: center ;
 }
 
 .area-p{
     border: 3px solid white;
-    margin-top: 180px;
     margin-left: 100px;
     border-radius: 20px;
     width: 50%;
@@ -132,4 +142,108 @@ main{
 .txt-sbm{
     color: white;
     text-align: center;
+}
+
+.inferior{
+    background-color: rgb(23, 22, 22);
+    width: 100%;
+    height: 90px;
+    border-top: 2px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.redes-sociais{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn-inferior{
+    border: none;
+    background-color: transparent;
+}
+
+.btn-inferior i{
+    font-size: 23px;
+    color: white;
+}
+
+.btn-inferior:hover{
+    cursor: pointer;
+}
+
+.copyright{
+    color: white;
+    font-size: 12px;
+}
+
+.area-ft{
+    height: 200px;
+    width: 230px;
+}
+
+.ft{
+    width: 100%;
+    height: 100%;
+}
+
+#projetos{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 580px;
+    width: 100%;
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+}
+
+.area-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    flex-direction: column;
+    height: 400px;
+    width: 480px;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+}
+
+.LandPag-img{
+    border-radius: 9px;
+    width: 450px;
+    border: 3px solid black;
+    height: 250px;
+}
+
+.landP{
+    margin-bottom: 18px;
+}
+
+.Pi-img{
+    width: 450px;
+    height: 250px;
+    border: 3px solid black;
+    border-radius: 9px;
+}
+
+.projetos-txt{
+    font-size: 18px;
+    text-align: center;
+}
+
+.Pi-txt{
+    color: rgb(57, 236, 57);
+}
+
+.cisco{
+    height: 500px;
+    width: 100%;
+    background-color: white;
 }
