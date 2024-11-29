@@ -73,7 +73,7 @@ section{
 
 main{
     height: 100%;
-    width: 99vw;
+    width: 99.2vw;
     background-color: rgb(27, 26, 26);
 }
 
@@ -116,14 +116,15 @@ main{
 .minha-img{
     height: 100%;
     width: 60%;
-
 }
 
 #sobre-mim{
     flex-direction: row;
     display: flex;
     align-items: center;
-    justify-content: center ;
+    justify-content: center;
+    height: 580px;
+    width: 100%;
 }
 
 .area-p{
@@ -242,8 +243,99 @@ main{
     color: rgb(57, 236, 57);
 }
 
+#habilidades{
+    flex-direction: column;
+    display: flex;
+    gap: 160px;
+}
+
+.area-certificados{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.area-titulo-hab{
+    display: flex;
+    width: 78%;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+.cisco-icon{
+    height: 70px;
+    width: 70px;
+    border-radius: 10px;
+}
+
+.txt-hab{
+    color: white;
+    font-size: 63px;
+}
+
 .cisco{
-    height: 500px;
-    width: 100%;
-    background-color: white;
+    height: 400px;
+    width: 73%;
+    border-radius: 20px;
+    border: 2px solid white;
+    background-color: rgb(180, 179, 179) ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+}
+
+.certificado{
+    border-radius: 6px;
+    padding: 8px;
+    border: 1px solid white; 
+    height: 200px;
+}
+
+.senac{
+    height: 400px;
+    width: 73%;
+    border-radius: 20px;
+    border: 2px solid white;
+    background-color: rgb(180, 179, 179) ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+}
+
+.senac-icon{
+    height: 100px;
+    width: 100px;
+}
+
+.senac p{
+    font-size: 25px;
+    color: #585858;
+}
+
+.cebrac{
+    height: 400px;
+    width: 73%;
+    border-radius: 20px;
+    border: 2px solid white;
+    background-color: rgb(180, 179, 179) ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+}
+
+.cebrac-icon{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%
+}
+
+.cebrac p{
+    font-size: 25px;
+    color: #585858;
 }
