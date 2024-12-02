@@ -13,24 +13,25 @@ section{
 
 .menu{
     width: 100%;
-    height: 90px;
+    height: 50px;
     background-color: rgb(23, 22, 22);
-    border-bottom: 2px solid gray;
+    box-shadow: 1px 1px 8px 1px rgb(32, 32, 32);
     display: flex;
     align-items: center;
     justify-content: space-between;
     z-index: 3;
     position: sticky;
     top: 0;
-
+    transition: all 0.3s ease;
 }
 
 .nav-list{
     gap: 25px;
     display: flex;
     flex-direction: row;
-    font-size: 18px;
-    margin-left: 30px;
+    font-size: 15px;
+    margin-right: 30px;
+    
 }
 
 .nav-item{
@@ -40,35 +41,48 @@ section{
 .nav-link{
     text-decoration: none;
     color: #f0f0f0;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease;
 }
 
 .nav-link:hover{
     border: 0.8px solid white;
-    padding: 8px;
+    padding: 5px;
     border-radius: 10px;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .area-logo{
-    height: 150px;
-    width: 150px;
-}
-
-.icone-lateral{
     height: 100%;
-    width: 100%;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
 }
 
-.btn-header{
-    width: 150px;
-    height: 40px;
-    background-color: rgb(53, 222, 53);
+.italic-nome{
     color: white;
-    border-radius: 10px;
-    border: none;
-    margin-right: 30px;
-    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.moon{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: white;
+    position: relative;
+    transform: rotate(-30deg);
+}
+
+.moon::after{
+    content: "";
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: rgb(23, 22, 22);
+    right: -4px;
+    position: absolute;
 }
 
 main{
@@ -80,14 +94,31 @@ main{
 #home{
     background-color: rgb(27, 26, 26);
     display: flex;
+    align-items: center;
     flex-direction: row;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     
 }
 
+.home-texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bem-vindo{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+
 .nome{
+    width: 300px;
+    background-color: white;
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: row;
     gap: 11px;
 }
@@ -95,7 +126,8 @@ main{
 .nome-texto{
     text-transform: lowercase;
     font-size: 40px;
-    color: white;
+    font-weight: 500;
+    color: black;
 }
 
 .maeda{
@@ -104,13 +136,15 @@ main{
 
 .area-img{
     margin-top: 60px;
-    height: 500px;
-    width: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 10px solid lime;
-    border-radius: 50%;
+    transition: all 0.5s ease;
+}
+
+.area-img:hover{
+    background-color: white;
+    border-radius: 50% 0%;
 }
 
 .minha-img{
@@ -135,7 +169,6 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
     padding: 30px;
     margin-bottom: 30px;
 }
@@ -165,14 +198,42 @@ main{
     gap: 15px;
 }
 
+.instagram:hover{
+    color: #E4405F;
+}
+
+.github:hover{
+    color: rgb(185, 35, 185);
+}
+
+.linkedin:hover{
+    color: #0077B5;
+}
+
 .btn-inferior{
     border: none;
     background-color: transparent;
 }
 
+/* .btn-inferior:hover{
+    border-radius: 50%;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
 .btn-inferior i{
     font-size: 23px;
     color: white;
+    transition: all 0.4s ease;
+}
+
+.btn-inferior i:hover{
+    font-size: 30px;
+    /* color: black; */
 }
 
 .btn-inferior:hover{
@@ -195,13 +256,15 @@ main{
 }
 
 #projetos{
+    padding: 80px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    height: 580px;
+    gap: 20px;
     width: 100%;
     border-top: 5px solid white;
     border-bottom: 5px solid white;
+    flex-wrap: wrap;
 }
 
 .area-card{
@@ -277,7 +340,6 @@ main{
 }
 
 .cisco{
-    height: 400px;
     width: 73%;
     border-radius: 20px;
     border: 2px solid white;
@@ -286,6 +348,12 @@ main{
     align-items: center;
     justify-content: center;
     gap: 70px;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
+.btn-certificado{
+    height: 300px;
 }
 
 .certificado{
@@ -296,7 +364,6 @@ main{
 }
 
 .senac{
-    height: 400px;
     width: 73%;
     border-radius: 20px;
     border: 2px solid white;
@@ -305,6 +372,8 @@ main{
     align-items: center;
     justify-content: center;
     gap: 70px;
+    flex-wrap: wrap;
+    padding: 50px;
 }
 
 .senac-icon{
@@ -318,7 +387,6 @@ main{
 }
 
 .cebrac{
-    height: 400px;
     width: 73%;
     border-radius: 20px;
     border: 2px solid white;
@@ -327,6 +395,8 @@ main{
     align-items: center;
     justify-content: center;
     gap: 70px;
+    flex-wrap: wrap;
+    padding: 50px;
 }
 
 .cebrac-icon{

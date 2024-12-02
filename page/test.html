@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page</title>
+</head>
+
+<style>
+    *{
+        transition: all 0.5s ease;
+    }
+
+    body{
+        background-color: rgb(26, 25, 25);
+        width: 99vw;
+        height: 98vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .area{
+        height: 150px;
+        width: 350px;
+        padding: 20px;
+        background-color: #646464;
+        border-radius: 300px;
+        display: flex;
+        align-items: center;
+    }
+
+    .bola{
+        width: 150px;
+        height: 150px;
+        background-color: rgb(201, 201, 201);
+        border-radius: 50%;
+        position: relative;
+        transform: rotate(-20deg);
+    }
+
+    .bola::after{
+        content: "";
+        width: 150px;
+        height: 150px;
+        background-color: #646464;
+        border-radius: 50%;
+        right: -50px;
+        position: absolute;
+    }
+</style>
+
+<body>
+    
+    <div class="area">
+        <div class="bola"></div>
+    </div>
+
+
+
+</body>
+</html>
