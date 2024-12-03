@@ -6,16 +6,21 @@
     font-family: 'Poppins',sans-serif;
 }
 
-section{
-    margin-top: 60px;
-    margin-bottom: 130px;
+
+
+.titulo{
+    color: white;
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
 }
+
+/* -- MENU -- */
 
 .menu{
     width: 100%;
     height: 50px;
     background-color: rgb(23, 22, 22);
-    box-shadow: 1px 1px 8px 1px rgb(32, 32, 32);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -87,9 +92,11 @@ section{
 
 main{
     height: 100%;
-    width: 99.2vw;
+    width: 99vw;
     background-color: rgb(27, 26, 26);
 }
+
+/* -- HOME -- */
 
 #home{
     background-color: rgb(27, 26, 26);
@@ -97,8 +104,7 @@ main{
     align-items: center;
     flex-direction: row;
     justify-content: space-evenly;
-    flex-wrap: wrap;
-    
+    flex-wrap: wrap;    
 }
 
 .home-texto{
@@ -130,27 +136,24 @@ main{
     color: black;
 }
 
-.maeda{
-    color: lime;
-}
-
 .area-img{
     margin-top: 60px;
+    background-color: white;
+    height: 400px;
+    width: 700px;
+    border-radius: 50% 0%;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: all 0.5s ease;
 }
 
-.area-img:hover{
-    background-color: white;
-    border-radius: 50% 0%;
-}
-
 .minha-img{
     height: 100%;
     width: 60%;
 }
+
+/* -- SOBRE-MIM -- */
 
 #sobre-mim{
     flex-direction: row;
@@ -177,6 +180,8 @@ main{
     color: white;
     text-align: center;
 }
+
+/* -- FOOTER -- */
 
 .inferior{
     background-color: rgb(23, 22, 22);
@@ -215,16 +220,6 @@ main{
     background-color: transparent;
 }
 
-/* .btn-inferior:hover{
-    border-radius: 50%;
-    background-color: white;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
-
 .btn-inferior i{
     font-size: 23px;
     color: white;
@@ -233,7 +228,6 @@ main{
 
 .btn-inferior i:hover{
     font-size: 30px;
-    /* color: black; */
 }
 
 .btn-inferior:hover{
@@ -255,34 +249,54 @@ main{
     height: 100%;
 }
 
+/* -- PROJETOS -- */
+
 #projetos{
-    padding: 80px;
+    background-color: rgb(23, 22, 22);
+    padding-top: 90px;
+    padding-bottom: 90px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    gap: 20px;
     width: 100%;
-    border-top: 5px solid white;
-    border-bottom: 5px solid white;
     flex-wrap: wrap;
+    flex-direction: column;
+}   
+
+.cards{
+    display: flex;
+    gap: 60px;
+
 }
 
-.area-card{
+.card-projeto{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 25px;
     flex-direction: column;
-    height: 400px;
-    width: 480px;
+    transition: all 0.8s ease;
+}
+
+.card-projeto:hover{
+    padding: 5px;
     border-radius: 20px;
     background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    .projetos-txt{
+        opacity: 1;
+    }
+
+    .Proj-img{
+        border: 3px solid black;
+    }
 }
 
 .LandPag-img{
     border-radius: 9px;
     width: 450px;
-    border: 3px solid black;
+    border: 3px solid white;
+    padding: 2px;
     height: 250px;
 }
 
@@ -293,23 +307,39 @@ main{
 .Pi-img{
     width: 450px;
     height: 250px;
-    border: 3px solid black;
+    border: 3px solid white;
+    padding: 2px;
     border-radius: 9px;
 }
 
 .projetos-txt{
     font-size: 18px;
     text-align: center;
+    opacity: 0;
+}
+
+.link-proj{
+    color: black;
+    text-decoration: none;
 }
 
 .Pi-txt{
     color: rgb(57, 236, 57);
 }
 
-#habilidades{
+/* -- CERTIFICADOS -- */
+
+#certificados{
+    margin-top: 50px;
     flex-direction: column;
     display: flex;
-    gap: 160px;
+    gap: 70px;
+}
+
+.grup-cert{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
 }
 
 .area-certificados{
@@ -336,11 +366,12 @@ main{
 
 .txt-hab{
     color: white;
-    font-size: 63px;
+    font-size: 40px;
+    font-weight: 530;
 }
 
 .cisco{
-    width: 73%;
+    width: 65%;
     border-radius: 20px;
     border: 2px solid white;
     background-color: rgb(180, 179, 179) ;
@@ -364,7 +395,7 @@ main{
 }
 
 .senac{
-    width: 73%;
+    width: 65%;
     border-radius: 20px;
     border: 2px solid white;
     background-color: rgb(180, 179, 179) ;
@@ -387,7 +418,7 @@ main{
 }
 
 .cebrac{
-    width: 73%;
+    width: 65%;
     border-radius: 20px;
     border: 2px solid white;
     background-color: rgb(180, 179, 179) ;
