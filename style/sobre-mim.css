@@ -1,0 +1,25 @@
+#sobre-mim{
+    padding-top: 90px;
+    padding-bottom: 90px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 90px;
+}
+
+.area-p{
+    border: 3px solid white;
+    border-radius: 20px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.txt-sbm{
+    color: white;
+    text-align: center;
+}

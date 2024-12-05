@@ -1,0 +1,65 @@
+.inferior{
+    background-color: rgb(23, 22, 22);
+    width: 100%;
+    height: 90px;
+    border-top: 2px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.redes-sociais{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.instagram:hover{
+    color: #E4405F;
+}
+
+.github:hover{
+    color: rgb(185, 35, 185);
+}
+
+.linkedin:hover{
+    color: #0077B5;
+}
+
+.btn-inferior{
+    border: none;
+    background-color: transparent;
+}
+
+.btn-inferior i{
+    font-size: 23px;
+    color: white;
+    transition: all 0.4s ease;
+}
+
+.btn-inferior i:hover{
+    font-size: 30px;
+}
+
+.btn-inferior:hover{
+    cursor: pointer;
+}
+
+.copyright{
+    color: white;
+    font-size: 12px;
+}
+
+.area-ft{
+    height: 200px;
+    width: 230px;
+}
+
+.ft{
+    width: 100%;
+    height: 100%;
+}
