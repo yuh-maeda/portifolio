@@ -99,4 +99,11 @@ main{
         height: 100%;
         width: 97%;
     }
+
+    .rolar{
+        margin-top: 50px;
+        font-size: 21px;
+        display: flex;
+        color: rgb(104, 104, 104);
+    }
 }
