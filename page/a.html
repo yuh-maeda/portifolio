@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animação ao Carregar</title>
+  <style>
+    /* Estilo inicial para ocultar o conteúdo */
+    .hidden {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+
+    /* Animação de fade-in */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Quando a classe 'fade-in' for aplicada */
+    .fade-in {
+      animation: fadeIn 1s ease-out;
+      opacity: 1; /* Garantir visibilidade ao final */
+      transform: translateY(0); /* Resetar posição */
+    }
+  </style>
+</head>
+<body>
+  <div id="content" class="hidden">
+    <h1>Bem-vindo ao meu site!</h1>
+    <p>Este é um exemplo de animação ao carregar a página.</p>
+  </div>
+
+  <script>
+    window.addEventListener("load", () => {
+      const content = document.getElementById("content");
+      content.classList.remove("hidden"); // Remove a classe inicial
+      content.classList.add("fade-in"); // Adiciona a animação
+    });
+  </script>
+</body>
+</html>

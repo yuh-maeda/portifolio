@@ -5,6 +5,8 @@
     justify-content: center;
     display: flex;
     gap: 120px;
+    align-items: center;
+    justify-content: center;
 }
 
 .grup-cert{
@@ -44,14 +46,15 @@
 
 .cisco{
     width: 65%;
-    border-radius: 20px;
+    border-radius: 20px 20px 0px 0px;
     border: 2px solid white;
     background-color: rgb(180, 179, 179) ;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 70px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    overflow-x: auto;
     padding: 50px;
 }
 
