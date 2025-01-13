@@ -32,6 +32,28 @@ main{
     background-color: rgb(27, 26, 26);
 }
 
+.esconder{
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+*{
+animation: fadeIn 1s ease-out;
+opacity: 1;
+transform: translateY(0);
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
 @media screen and (max-width: 900px) {
     .area-logo{
         width: 100%;

@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/style.css">
-    <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/moon icon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"> 
     <title>Portifólio</title>
 </head>
-<body>
+<body style="background-color: rgb(27, 26, 26);">
 
-    <main>
+    <main id="main" class="esconder">
         
         <header class="menu">
             <div class="area-logo">
@@ -74,21 +74,19 @@
             <h1 class="titulo">Projetos</h1>
 
             <div class="cards">
+                
                 <div class="card-projeto landP">
                     <a href="https://github.com/yuh-maeda/LadingPage-Lanchonete" class="link-proj" target="_blank">
                         <img src="../img/Landing page.png" alt="Lading-page" class="Proj-img LandPag-img">
-                        <p class="projetos-txt">Lading Page Hamburgueria</p>
+                        <p>Projeto Landing Page</p>
+
                     </a>
                 </div>
-
 
                 <div class="card-projeto Pi">
                     <a href="https://github.com/Fernanda-echev/PI_agro_plants_now" class="link-proj" target="_blank">
                         <img src="../img/Projeto Integrador.png" alt="Pi" class="Proj-img Pi-img">
-                        <div class="area-txt-projeto">
-                            <p class="projetos-txt">Projeto Integrador - Senac</p>
-                            <p class="Pi-txt projetos-txt">Agro Plants Now</p>
-                        </div>
+                        <p>Projeto Agro Plants Now</p>
                     </a>
                 </div>
 
@@ -214,6 +212,14 @@
         </footer>
 
     </main>
+
+    <script>
+        window.addEventListener("load", () => {
+          const content = document.getElementById("main");
+          content.classList.remove("esconder");
+          content.classList.add("fade-in");
+        });
+    </script>
 
 </body>
 </html>
