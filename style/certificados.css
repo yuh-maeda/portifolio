@@ -52,7 +52,7 @@
     display: flex;
     align-items: center;
     justify-content: left;
-    gap: 70px;
+    gap: 8%;
     flex-wrap: nowrap;
     overflow-x: auto;
     padding: 50px;

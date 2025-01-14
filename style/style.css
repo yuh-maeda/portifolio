@@ -108,10 +108,32 @@ transform: translateY(0);
         flex-direction: column;
     }
 
-    .Proj-img{
-        border: 3px solid black;
+    .card-projeto{
+        background-color: transparent;
     }
-        
+
+    .card-projeto:hover{
+        background-color: transparent;
+    }
+
+    .Proj-img{
+        border: 3px solid white;
+    }
+       
+    .card-projeto p{
+        opacity: 1;
+        background-color: transparent;
+        border: 2px solid white;
+        margin-top: 12px;
+        font-size: 1.2rem;
+        padding: 12px;
+        width: 90%;
+        height: 30%;
+        border-radius: 20px;    
+        color: white;    
+    }
+
+    
     .LandPag-img{
         height: 100%;
         width: 97%;
