@@ -86,66 +86,46 @@ transform: translateY(0);
         padding: 5px;
     }
 
-    .card-projeto{
-        height: 50%;
-        width: 85%;
-        padding: 5px;
-        border-radius: 20px;
-        background-color: rgb(255, 255, 255);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .projetos-txt{
-        opacity: 1;
-    }
-
-    .link-proj{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
-
-    .card-projeto{
-        background-color: transparent;
-    }
-
-    .card-projeto:hover{
-        background-color: transparent;
-    }
-
     .Proj-img{
-        border: 3px solid white;
-    }
-       
-    .card-projeto p{
-        opacity: 1;
-        background-color: transparent;
-        border: 2px solid white;
-        margin-top: 12px;
-        font-size: 1.2rem;
-        padding: 12px;
-        width: 90%;
-        height: 30%;
-        border-radius: 20px;    
-        color: white;    
+        width: 57vw;
+        height: 50%;
     }
 
+    .area-btn h1{
+        width: 80%;
+    }
     
-    .LandPag-img{
-        height: 100%;
-        width: 97%;
+    .btn-pi.active{
+        .Pi-modal{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 15px;
+
+        }
+    
+        .Pi-modal i{
+            display: none;
+        }
     }
 
-    .projetos-txt{
-        opacity: 1;
+    .texto-modal p{
+        font-size: 1.1rem;
     }
 
-    .Pi-img{
-        height: 100%;
-        width: 97%;
+    .btn-landP.active{
+        .landP-modal{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .landP-modal i{
+            display: none;
+        }
     }
 
     .rolar{
@@ -163,4 +143,37 @@ transform: translateY(0);
     .landP-modal{
         flex-direction: column;
     }
+}
+
+@media screen and (max-width: 1450px) {
+
+    .btn-pi.active{
+        .Pi-modal{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 15px;
+
+        }
+    
+        .Pi-modal i{
+            display: none;
+        }
+    }
+
+    .btn-landP.active{
+        .landP-modal{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .landP-modal i{
+            display: none;
+        }
+    }
+
 }

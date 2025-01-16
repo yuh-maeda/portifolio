@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="../style/style.css">
     <link rel="shortcut icon" href="../img/moon icon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"> 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <title>Portifólio</title>
 </head>
 <body style="background-color: rgb(27, 26, 26);">
@@ -75,55 +78,55 @@
 
             <h1 class="titulo">Projetos</h1>
 
-            <div class="janela-modal">
+            <div class="cards">
 
-                <div class="landP-modal">
-                    <img src="../img/Landing page.png" alt="Lading-page" class="Proj-img LandPag-img modal-img">
+                <div class="card-projeto landP">
+                    <button class="btn-proj btn-landP" target="_blank">
 
-                    <div class="info-card">
-
-                        <div class="texto-modal">
-                        <h1>Landing Page</h1>
-                        <p>Uma landing page de uma lanchonete, contendo uma home,cardápio,depoimentos e o footer.</p>
+                        <div class="area-btn area-btn-landP"> 
+                            <img src="../img/Landing page.png" alt="Lading-page" class="Proj-img LandPag-img">
+                            <h1>Projeto Landing Page</h1>
                         </div>
-                        <a href="https://github.com/yuh-maeda/LadingPage-Lanchonete" class="link-proj" target="_blank">Abrir com github</a>
-                    
-                    </div>
+
+                        <div class="landP-modal modal">
+                            <img src="../img/Landing page.png" alt="Lading-page" class="Proj-img LandPag-img">
+                            <div class="info-card">
+                                <div class="texto-modal">
+                                    <h1>Projeto Landing Page</h1>
+                                    <p>Uma landing page para uma lanchonete, estruturada com as seções: Home, Cardápio, Depoimentos de clientes e Footer. O design é responsivo, com foco na usabilidade e uma navegação fluida e intuitiva.</p>
+                                </div>
+                                <a href="https://github.com/yuh-maeda/LadingPage-Lanchonete" class="link-proj" target="_blank">Abrir com github</a>
+                            </div>
+                            <i class="fa-solid fa-x"></i>
+                        </div>
+
+                    </button>
                 </div>
-                
-                <div class="landP-modal">
-                    <img src="../img/Projeto Integrador.png" alt="Pi" class="Proj-img Pi-img">
 
-                    <div class="info-card">
+                <div class="card-projeto Pi">
+                    <button class="btn-proj btn-pi" target="_blank">
 
-                        <div class="texto-modal">
-                        <h1>Landing Page</h1>
-                        <p>Uma landing page de uma lanchonete, contendo uma home,cardápio,depoimentos e o footer.</p>
+                        <div class="area-btn area-btn-pi"> 
+                            <img src="../img/Projeto Integrador.png" alt="Pi" class="Proj-img Pi-img">
+                            <h1>Agro Plants Now</h1>
                         </div>
-                        <a href="https://github.com/yuh-maeda/LadingPage-Lanchonete" class="link-proj" target="_blank">Abrir com github</a>
-                    
-                    </div>
+
+                        <div class="Pi-modal modal">
+                            <img src="../img/Projeto Integrador.png" alt="Pi" class="Proj-img Pi-img">
+                            <div class="info-card">
+                                <div class="texto-modal">
+                                    <h1>Agro Plants Now</h1>
+                                    <p>Uma landing page para uma lanchonete, estruturada com as seções: Home, Cardápio, Depoimentos de clientes e Footer. O design é responsivo, com foco na usabilidade e uma navegação fluida e intuitiva.</p>
+                                </div>
+                                <a href="https://github.com/Fernanda-echev/PI_agro_plants_now" class="link-proj" target="_blank">Abrir com github</a>
+                            </div>
+                            <i class="fa-solid fa-x"></i>
+                        </div>
+                    </button>
                 </div>
 
 
             </div>
-
-            <!-- <div class="cards">
-
-                <div class="card-projeto landP">
-                    <a href="https://github.com/yuh-maeda/LadingPage-Lanchonete" class="link-proj" target="_blank">
-                        <img src="../img/Landing page.png" alt="Lading-page" class="Proj-img LandPag-img">
-                        <p>Projeto Landing Page</p>
-                    </a>
-                </div>
-
-                <div class="card-projeto Pi">
-                    <a href="https://github.com/Fernanda-echev/PI_agro_plants_now" class="link-proj" target="_blank">
-                        <img src="../img/Projeto Integrador.png" alt="Pi" class="Proj-img Pi-img">
-                        <p>Projeto Agro Plants Now</p>
-                    </a>
-                </div>
-            </div> -->
 
         </section>
 
@@ -255,6 +258,19 @@
     </main>
 
     <script>
+
+        $(document).ready(function(){
+            $('.btn-pi').on('click',function(){
+                $('.btn-pi').toggleClass('active');
+            })
+        })
+
+        $(document).ready(function(){
+            $('.btn-landP').on('click',function(){
+                $('.btn-landP').toggleClass('active');
+            })
+        })
+
         window.addEventListener("load", () => {
           const content = document.getElementById("main");
           content.classList.remove("esconder");

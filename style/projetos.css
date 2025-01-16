@@ -18,75 +18,61 @@
     flex-wrap: wrap;
 }
 
-.card-projeto{
+.area-btn{
+    gap: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    width: 100%;
+    cursor: pointer;
     transition: all 0.8s ease;
 }
 
-.card-projeto:hover{
-    padding: 5px;
-    border-radius: 20px;
-    background-color: rgb(255, 255, 255);
+.Proj-img{
+    width: 450px;
+    height: 250px;
+    border: 3px solid white;
+    padding: 2px;
+    border-radius: 9px;
+}
+
+.btn-proj{
+    width: 100%;
+    padding: 10px;
     display: flex;
     align-items: center;
-    .link-proj p{
-        opacity: 1;
-    }
-
-    .Proj-img{
-        border: 3px solid black;
-    }
-}
-
-.LandPag-img{
-    border-radius: 9px;
-    width: 450px;
-    border: 3px solid white;
-    padding: 2px;
-    height: 250px;
-}
-
-.Pi-img{
-    width: 450px;
-    height: 250px;
-    border: 3px solid white;
-    padding: 2px;
-    border-radius: 9px;
-}
-
-.projetos-txt{
-    font-size: 18px;
-    text-align: center;
-    opacity: 0;
+    justify-content: center;
+    flex-direction: row;
+    border-radius: 40px;    
+    background-color: white;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
 }
 
 .link-proj{
     padding: 10px;
     border-radius: 40px;    
     background-color: white;
-    color: black;
     text-decoration: none;
+    color: black;
+    font-weight: 500;
+    top: -20px;
 }
 
-.link-proj p{
-    opacity: 0;
+.area-btn h1{
+    background-color: white;
+    width: 60%;
+    color: black;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1.2rem;
-    font-weight: 450
-}
-
-.janela-modal{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 50px;
+    font-weight: 450;
+    padding: 8px;
+    border-radius: 20px;
 }
 
 .texto-modal{
@@ -97,27 +83,73 @@
     gap: 20px;
 }
 
-.landP-modal{
-    height: 100%;
-    display: flex; 
-    justify-content: center;
-    gap: 50px;
-    padding: 15px;
-    border-radius: 20px;
-    background-color: rgb(37, 37, 37);
+.texto-modal h1{
+    font-size: 2rem;
 }
 
-.landP-modal:hover{
-    width: 70%;
-    .info-card{
-        display: flex;
+.texto-modal p{
+    font-size: 1.2rem;
+    display: flex;
+}
+
+.landP-modal{
+    display: none;
+}
+
+.Pi-modal{
+    display: none;
+}
+
+.btn-pi.active{
+
+    .area-btn-pi{
+        display: none;
     }
+
+    .Pi-modal{
+        width: 60%;
+        height: 100%;
+        display: flex;
+        flex-direction: row; 
+        justify-content: center;
+        gap: 50px;
+        padding: 15px;
+        border-radius: 20px;
+        background-color: rgb(37, 37, 37);
+    }
+}
+
+.btn-landP.active{
+    .area-btn-landP{
+        display: none;
+    }
+
+    .landP-modal{
+        width: 60%;
+        height: 100%;
+        display: flex;
+        flex-direction: row; 
+        justify-content: center;
+        gap: 50px;
+        padding: 15px;
+        border-radius: 20px;
+        background-color: rgb(37, 37, 37);
+    }
+
 }
 
 .info-card{
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 40px;
     justify-content: space-between;
-    display: none;
+}
+
+.modal i{
+    font-size: 15px;
+}
+
+.modal i:hover{
+    cursor: pointer;
 }
